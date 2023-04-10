@@ -12,4 +12,16 @@ function createShip(length) {
     return ship;
 }
 
+function gameboard() {
+    let board = [];
+    for (let i = 0; i < 10; i++) {
+        let y = [];
+        for (let j = 0; j < 10; j++) {
+            y.push([]);
+        }
+        board.push(y);
+    }
+    return board;
+}
+
 export { createShip };
