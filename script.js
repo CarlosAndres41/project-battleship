@@ -6,9 +6,9 @@ let shipLength = {
     patrol: 2,
 };
 
-function createShip(length) {
+function createShip(type) {
     const ship = {
-        length: length,
+        length: shipLength[type],
         hits: 0,
         hit: function () {
             this.hits += 1;
