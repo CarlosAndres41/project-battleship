@@ -11,3 +11,5 @@ function createShip(length) {
     };
     return ship;
 }
+
+export { createShip };
