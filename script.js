@@ -12,16 +12,23 @@ function createShip(length) {
     return ship;
 }
 
-function gameboard() {
-    let board = [];
+function createGrid() {
+    let grid = [];
     for (let i = 0; i < 10; i++) {
         let y = [];
         for (let j = 0; j < 10; j++) {
             y.push([]);
         }
-        board.push(y);
+        grid.push(y);
     }
-    return board;
+    return grid;
+}
+
+function gameboard() {
+    const gameboard = {
+        grid: createGrid(),
+    };
+    return gameboard;
 }
 
 export { createShip };
